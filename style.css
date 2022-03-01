@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.cabecalho {
+    background-color: #442c18;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.cabecalho-titulo {
+    font-size: 26px;
+}
+.conteudo-principal {
+    padding: 20px; /* separa o container das bordas do body */
+    background-image: url(./assets/people.jpg);
+    background-size: cover; /* faz com que a imagem tenha o tamanho exato para cobrir o "main" */ 
+    overflow: hidden; /* força a imagem a preencher todo o espaço */
+}
+.container-form {
+    max-width: 230px; /* Define o tamanho deste container */
+    background-color: #ffffffbb; /* Fundo transparente deste container */
+    padding: 20px; /* dá a distância do conteúdo para as bordas do container */
+    float: right; /* faz como que o container fique colado na direita */
+    border-radius: 10px;
+}
+h2{
+    font-size: 16px;
+}
+.mb { /* essa classe se chama "mb" referente á "margin-bottom", assim eu aplico o "margin-bottom" ao "H2" e ao "P" ao mesmo tempo */
+    margin-bottom: 15px;
+}
+input, select {
+    width: 100%; /* faz com que os campos utilizem todo o espaco da largura do container */
+    box-sizing: border-box; /* faz com que todos os campos tenham o mesmo tamanho */
+    padding: 10px; /* deixa o campo mais largo, devido o espaçamento do texto para as bordas */
+    border: none; /* retira as bordas */
+    margin-bottom: 10px; /* dá uma margem abaixo fazendo com que os campos se separem */   
+    border-radius: 5px;
+}
+input[type="submit"] { /* aqui eu falo somente com o input do tipo submit */
+    color: white;
+    background-color: #442c18;
+    font-weight: bold;
+}
+select { /* todos os "appearance" são para tirar o padrão de diferentes browzers*/
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(./assets/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center; /* posição da flecha */
+}
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center; /* coloca o conteúdo do "footer" ao centro */
+}
+.picture {
+    width: 160px; /* tamanho da imagem */
+}
+
+.description {
+    display: inline-block; /* coloca o texto ao lado da imagem */
+    text-align: left;
+    color: white;
+    max-width: 40%; /* tamanho máximo da descrição("h3" e "p")*/
+    margin-left: 40px; /* espaço entre a descrição e a imagem */
+}
+.description p, .description h3 {
+    margin-bottom: 20px; /* está dando o espaço entre o título e os parágrafos */
+}
+.description h3 {
+    font-size: 24px;
+}
