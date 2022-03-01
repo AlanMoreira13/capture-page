@@ -62,10 +62,15 @@ select { /* todos os "appearance" são para tirar o padrão de diferentes browze
 footer {
     background-color: #202121;
     padding: 40px;
-    text-align: center; /* coloca o conteúdo do "footer" ao centro */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .picture {
     width: 160px; /* tamanho da imagem */
+    height: 200px;
+    border-radius: 3px;
 }
 
 .description {
